@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Circuit Quest: The Apprentice of Electra</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="main-menu">
+    <h1>Circuit Quest</h1>
+    <p>The Apprentice of Electra</p>
+    <button onclick="startGame()">Start</button>
+  </div>
+
+  <div id="level-select" class="hidden">
+    <h2>Select a Level</h2>
+    <ul id="level-list"></ul>
+    <button onclick="goBack()">Back to Menu</button>
+  </div>
+
+  <div id="game-content" class="hidden">
+    <h2 id="level-title"></h2>
+    <div id="level-description"></div>
+    <div id="simulation-placeholder">[Simulation Placeholder]</div>
+    <button onclick="goBackToLevels()">Back to Levels</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
